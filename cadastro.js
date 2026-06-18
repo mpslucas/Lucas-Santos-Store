@@ -10,5 +10,5 @@
 
       localStorage.setItem("nomeUsuario", nome);
 
-      window.location.href = "index.html";
+      window.location.href = "pgInicial.html";
     });
