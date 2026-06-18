@@ -1,65 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-    <title>Lucas Santos Store</title>
-    <link rel="icon" type="image/png" href="imagens/grafite.png">
-
+    <link rel="stylesheet" href="styleBemVindo.css">
+    <title>Document</title>
 </head>
-
 <body>
     <header>
-        <div id="cabecario">
-            <button class="btnRedondo btn-filtro" data-filtro="todos">
-                <a href="#"><img src="imagens/atualizar.png" alt="" class="imgBotao"></a>
-            </button>
-            <button class="btnRedondo">
-                <a href="#"><img src="imagens/ajuda.png" alt="" class="imgBotao"></a>
-            </button>
-            <button class="btnRedondo">
-                <a href="cadastro.html"><img src="imagens/perfil.png" alt="" class="imgBotao"></a>
-            </button>
-            <p id="nome"></p>
-            <input type="text" placeholder="Pesquisar" id="pequiar">
-
-            <button class="btnRedondo btn-filtro" data-filtro="camisas">
-                <a href="#"><img src="imagens/conjunto.png" alt="" class="imgBotao"></a>
-            </button>
-            <button class="btnRedondo btn-filtro" data-filtro="tenis">
-                <a href="#"><img src="imagens/tenis.png" alt="" class="imgBotao"></a>
-            </button>
-
-            <button id="btn-remover-carrinho">
-                <a href="#"><img src="imagens/carrinho.png" alt="" class="imgBotao"></a>
-                <span id="contador-carrinho">0</span>
-            </button>
-
-        </div>
-
-        <div id="header-mobile">
-            <div id="btn-hamburger">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-            <input type="text" placeholder="Pesquisar" id="pequiar">
-            <button id="btn-remover-carrinho">
-                <a href="#"><img src="imagens/carrinho.png" alt="" class="imgBotao"></a>
-                <span id="contador-carrinho">0</span>
-            </button>
-        </div>
-
-        <div class="dropdown-menu">
-            <button class="btn-responsivo btn-filtro" data-filtro="todos"><a href="#">Pagina inicial</a></button>
-            <button class="btn-responsivo"><a href="cadastro.html">Cadastrar-se</a></button>
-            <button class="btn-responsivo btn-filtro" data-filtro="camisas"><a href="#"></a>Conjuntos</button>
-            <button class="btn-responsivo btn-filtro" data-filtro="tenis"><a href="#"></a>Tenis</button>
-        </div>
-
-    </header>
-    <main>
         <div class="marcas">
             <div class="motor">
                 <div class="conteudo">
@@ -109,332 +57,52 @@
                 </div>
             </div>
         </div>
-
-        <section class="container">
-            <div class="carrossel">
-                <button class="btn1" id="prev">❮</button>
-                <div class="cards" id="cards">
-                    <div class="card meu-card" data-categoria="tenis">
-                        <img src="imagens/tenis nike1.webp" alt="">
-                        <h4>Court vision <b></b>R$299,99</h4>
-                        <button class="acessar" id="btn-carrinho">Selecionar</button>
-                    </div>
-                    <div class="overlay" id="overlay">
-                        <div class="card-expandido">
-                            <button class="fechar">X</button>
-
-                            <h2>Court Vision</h2>
-                            <img src="imagens/tenis nike1.webp" alt="">
-                            <h3>R$299,99</h3>
-                            <p>Tênis Nike Court Vision.</p>
-                            <button class="acessar" id="btn-carrinho">Selecionar</button>
-                        </div>
-                    </div>
-
-
-                    <div class="card meu-card" data-categoria="camisas">
-                        <img src="imagens/conjunto adidas1.jpg" alt="">
-                        <h4>Conjunto adidas <b></b>R$249,90</h4>
-                        <button class="acessar" id="btn-carrinho">Selecionar</button>
-                    </div>
-                    <div class="overlay" id="overlay">
-                        <div class="card-expandido">
-                            <button class="fechar">X</button>
-
-                            <h2>Conjunto Adidas</h2>
-                            <img src="imagens/conjunto adidas1.jpg" alt="">
-                            <h3>R$249,90</h3>
-                            <p>Conjunto Adidas esportivo.</p>
-                            <button class="acessar" id="btn-carrinho">Selecionar</button>
-                        </div>
-                    </div>
-
-
-                    <div class="card meu-card" data-categoria="camisas">
-                        <img src="imagens/conjunto puma1.webp" alt="">
-                        <h4>Conjunto Puma <b></b>R$359,90</h4>
-                        <button class="acessar" id="btn-carrinho">Selecionar</button>
-                    </div>
-                    <div class="overlay" id="overlay">
-                        <div class="card-expandido">
-                            <button class="fechar">X</button>
-
-                            <h2>Conjunto Puma</h2>
-                            <img src="imagens/conjunto puma1.webp" alt="">
-                            <h3>R$359,90</h3>
-                            <p>Conjunto Puma confortável.</p>
-                            <button class="acessar" id="btn-carrinho">Selecionar</button>
-                        </div>
-                    </div>
-
-
-                    <div class="card meu-card" data-categoria="tenis">
-                        <img src="imagens/tenis adidas1.webp" alt="">
-                        <h4>Adidas Campus <b></b> R$299,99</h4>
-                        <button class="acessar" id="btn-carrinho">Selecionar</button>
-                    </div>
-                    <div class="overlay" id="overlay">
-                        <div class="card-expandido">
-                            <button class="fechar">X</button>
-
-                            <h2>Adidas Campus</h2>
-                            <img src="imagens/tenis adidas1.webp" alt="">
-                            <h3>R$299,99</h3>
-                            <p>Tênis Adidas Campus clássico.</p>
-                            <button class="acessar" id="btn-carrinho">Selecionar</button>
-                        </div>
-                    </div>
-
-
-
-                    <div class="card meu-card" data-categoria="tenis">
-                        <img src="imagens/tenis puma1.webp" alt="">
-                        <h4>Puma 180 <b></b> R$319,90</h4>
-                        <button class="acessar" id="btn-carrinho">Selecionar</button>
-                    </div>
-                    <div class="overlay" id="overlay">
-                        <div class="card-expandido">
-                            <button class="fechar">X</button>
-
-                            <h2>Puma 180</h2>
-                            <img src="imagens/tenis puma1.webp" alt="">
-                            <h3>R$319,90</h3>
-                            <p>Tênis Puma 180 retrô.</p>
-                            <button class="acessar" id="btn-carrinho">Selecionar</button>
-                        </div>
-                    </div>
-
-
-                    <div class="card meu-card" data-categoria="tenis">
-                        <img src="imagens/superstar.avif" alt="">
-                        <h4>Adidas superstar<b></b> R$249,90</h4>
-                        <button class="acessar" id="btn-carrinho">Selecionar</button>
-                    </div>
-                    <div class="overlay" id="overlay">
-                        <div class="card-expandido">
-                            <button class="fechar">X</button>
-
-                            <h2>Adidas Superstar</h2>
-                            <img src="imagens/superstar.avif" alt="">
-                            <h3>R$249,90</h3>
-                            <p>Tênis Adidas Superstar.</p>
-                            <button class="acessar" id="btn-carrinho">Selecionar</button>
-                        </div>
-                    </div>
-
-
-                    <div class="card meu-card" data-categoria="camisas">
-                        <img src="imagens/conjunto nike frio.jpg" alt="">
-                        <h4>Conjunto nike Frio<b></b> R$299,99</h4>
-                        <button class="acessar" id="btn-carrinho">Selecionar</button>
-                    </div>
-                    <div class="overlay" id="overlay">
-                        <div class="card-expandido">
-                            <button class="fechar">X</button>
-
-                            <h2>Conjunto Nike Frio</h2>
-                            <img src="imagens/conjunto nike frio.jpg" alt="">
-                            <h3>R$299,99</h3>
-                            <p>Conjunto Nike para dias frios.</p>
-                            <button class="acessar" id="btn-carrinho">Selecionar</button>
-                        </div>
-                    </div>
-
-
-                    <div class="card meu-card" data-categoria="tenis">
-                        <img src="imagens/dunk twister.webp" alt="">
-                        <h4>Nike dunk twister <b></b>R$349,90</h4>
-                        <button class="acessar" id="btn-carrinho">Selecionar</button>
-                    </div>
-                    <div class="overlay" id="overlay8">
-                        <div class="card-expandido">
-                            <button class="fechar">X</button>
-
-                            <h2>Nike Dunk Twister</h2>
-                            <img src="imagens/dunk twister.webp" alt="">
-                            <h3>R$349,90</h3>
-                            <p>Tênis Nike Dunk Twister.</p>
-                            <button class="acessar" id="btn-carrinho">Selecionar</button>
-                        </div>
-                    </div>
-
-
-                </div>
-                <button class="btn1" id="next">❯</button>
-            </div>
-        </section>
-
-
-        <section class="container">
-            <button class="btn1" id="prev2">❮</button>
-            <div class="carrossel">
-                <div class="cards" id="cards2">
-                    <div class="card meu-card" data-categoria="camisas">
-                        <img src="imagens/conjunto nike1.jpg" alt="">
-                        <h4>Conjunto Nike R$399,90</h4>
-                        <button class="acessar" id="btn-carrinho">Selecionar</button>
-                    </div>
-                    <div class="overlay">
-                        <div class="card-expandido">
-                            <button class="fechar">X</button>
-
-                            <h2>Conjunto Nike</h2>
-                            <img src="imagens/conjunto nike1.jpg" alt="">
-                            <h3>R$399,90</h3>
-                            <p>Conjunto Nike confortável e estiloso para o dia a dia.</p>
-                            <button class="acessar" id="btn-carrinho">Selecionar</button>
-                        </div>
-                    </div>
-
-
-                    <div class="card meu-card" data-categoria="tenis">
-                        <img src="imagens/tenis nike2.webp" alt="">
-                        <h4>Air Force R$299,99</h4>
-                        <button class="acessar" id="btn-carrinho">Selecionar</button>
-                    </div>
-                    <div class="overlay">
-                        <div class="card-expandido">
-                            <button class="fechar">X</button>
-
-                            <h2>Air Force</h2>
-                            <img src="imagens/tenis nike2.webp" alt="">
-                            <h3>R$299,99</h3>
-                            <p>Tênis Nike Air Force com design clássico e excelente conforto.</p>
-                            <button class="acessar" id="btn-carrinho">Selecionar</button>
-                        </div>
-                    </div>
-
-
-                    <div class="card meu-card" data-categoria="camisas">
-                        <img src="imagens/conjunto adidas2.webp" alt="">
-                        <h4>Conjunto Adidas R$249,90</h4>
-                        <button class="acessar" id="btn-carrinho">Selecionar</button>
-                    </div>
-                    <div class="overlay">
-                        <div class="card-expandido">
-                            <button class="fechar">X</button>
-
-                            <h2>Conjunto Adidas</h2>
-                            <img src="imagens/conjunto adidas2.webp" alt="">
-                            <h3>R$249,90</h3>
-                            <p>Conjunto Adidas esportivo ideal para treinos e uso casual.</p>
-                            <button class="acessar" id="btn-carrinho">Selecionar</button>
-                        </div>
-                    </div>
-
-
-                    <div class="card meu-card" data-categoria="tenis">
-                        <img src="imagens/tenis puma2.webp" alt="">
-                        <h4>Puma Suede XL R$299,99</h4>
-                        <button class="acessar" id="btn-carrinho">Selecionar</button>
-                    </div>
-                    <div class="overlay">
-                        <div class="card-expandido">
-                            <button class="fechar">X</button>
-
-                            <h2>Puma Suede XL</h2>
-                            <img src="imagens/tenis puma2.webp" alt="">
-                            <h3>R$299,99</h3>
-                            <p>Tênis Puma Suede XL com visual moderno e acabamento premium.</p>
-                            <button class="acessar" id="btn-carrinho">Selecionar</button>
-                        </div>
-                    </div>
-
-
-                    <div class="card meu-card" data-categoria="camisas">
-                        <img src="imagens/conjunto puma2.webp" alt="">
-                        <h4>Conjunto Puma R$259,90</h4>
-                        <button class="acessar" id="btn-carrinho">Selecionar</button>
-                    </div>
-                    <div class="overlay">
-                        <div class="card-expandido">
-                            <button class="fechar">X</button>
-
-                            <h2>Conjunto Puma</h2>
-                            <img src="imagens/conjunto puma2.webp" alt="">
-                            <h3>R$259,90</h3>
-                            <p>Conjunto Puma leve e confortável para diversas ocasiões.</p>
-                            <button class="acessar" id="btn-carrinho">Selecionar</button>
-                        </div>
-                    </div>
-
-
-                    <div class="card meu-card" data-categoria="tenis">
-                        <img src="imagens/samba xlg.avif" alt="">
-                        <h4>Adidas Samba XLG <b></b>R$199,90</h4>
-                        <button class="acessar" id="btn-carrinho">Selecionar</button>
-                    </div>
-                    <div class="overlay">
-                        <div class="card-expandido">
-                            <button class="fechar">X</button>
-
-                            <h2>Adidas Samba XLG</h2>
-                            <img src="imagens/samba xlg.avif" alt="">
-                            <h3>R$199,90</h3>
-                            <p>Adidas Samba XLG com estilo retrô e grande versatilidade.</p>
-                            <button class="acessar" id="btn-carrinho">Selecionar</button>
-                        </div>
-                    </div>
-
-
-                    <div class="card meu-card" data-categoria="camisas">
-                        <img src="imagens/puma calor.webp" alt="">
-                        <h4>Conjunto puma <b></b>R$149,99</h4>
-                        <button class="acessar" id="btn-carrinho">Selecionar</button>
-                    </div>
-                    <div class="overlay">
-                        <div class="card-expandido">
-                            <button class="fechar">X</button>
-
-                            <h2>Conjunto Puma</h2>
-                            <img src="imagens/puma calor.webp" alt="">
-                            <h3>R$149,99</h3>
-                            <p>Conjunto Puma ideal para dias quentes, com tecido leve e respirável.</p>
-                            <button class="acessar" id="btn-carrinho">Selecionar</button>
-                        </div>
-                    </div>
-
-
-                    <div class="card meu-card" data-categoria="camisas">
-                        <img src="imagens/moletom.webp" alt="">
-                        <h4>Moletom adidas <b></b>R$99,90</h4>
-                        <button class="acessar" id="btn-carrinho">Selecionar</button>
-                    </div>
-                    <div class="overlay">
-                        <div class="card-expandido">
-                            <button class="fechar">X</button>
-
-                            <h2>Moletom Adidas</h2>
-                            <img src="imagens/moletom.webp" alt="">
-                            <h3>R$99,90</h3>
-                            <p>Moletom Adidas confortável e perfeito para os dias mais frios.</p>
-                            <button class="acessar" id="btn-carrinho">Selecionar</button>
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
-            <button class="btn1" id="next2">❯</button>
-        </section>
+    </header>
+    <main>
+        <div class="container">
+            <img src="imagens/logo.png" alt="">
+            <h1>Bem vindo a Lucas Santos Store!!!</h1>
+            <button class="btn"><a href="index.html">Acessa a loja!!</a></button>
+        </div>
     </main>
     <footer>
-        <div class="rodape">
-            <div class="contato">
-                <button><img src="imagens/wpp.png" alt=""></button>
-                <button><img src="imagens/instagram.png" alt=""></button>
-            </div>
-            <div class="lista">
-                <h3>Contato</h3>
-                <ul>
-                    <li>Whatsapp</li>
-                    <li>Instagram</li>
-                    <li>Site desenvolvido por Lucas!</li>
-                </ul>
+        <div class="loja">
+            <div class="motor2">
+                <div class="conteudo2">
+                    <span><img src="imagens/logo.png" alt=""></span>
+                    <span><h4>Lucas Santos Store!</h4></span>
+                </div>
+                 <div class="conteudo2">
+                    <span><img src="imagens/logo.png" alt=""></span>
+                    <span><h4>Lucas Santos Store!</h4></span>
+                </div>
+                 <div class="conteudo2">
+                    <span><img src="imagens/logo.png" alt=""></span>
+                    <span><h4>Lucas Santos Store!</h4></span>
+                </div>
+                 <div class="conteudo2">
+                    <span><img src="imagens/logo.png" alt=""></span>
+                    <span><h4>Lucas Santos Store!</h4></span>
+                </div>
+                 <div class="conteudo2">
+                    <span><img src="imagens/logo.png" alt=""></span>
+                    <span><h4>Lucas Santos Store!</h4></span>
+                </div>
+                 <div class="conteudo2">
+                    <span><img src="imagens/logo.png" alt=""></span>
+                    <span><h4>Lucas Santos Store!</h4></span>
+                </div>
+                 <div class="conteudo2">
+                    <span><img src="imagens/logo.png" alt=""></span>
+                    <span><h4>Lucas Santos Store!</h4></span>
+                </div>
+                 <div class="conteudo2">
+                    <span><img src="imagens/logo.png" alt=""></span>
+                    <span><h4>Lucas Santos Store!</h4></span>
+                </div>
             </div>
         </div>
     </footer>
-    <script src="index.js"></script>
+    <script src=""></script>
 </body>
-
 </html>
